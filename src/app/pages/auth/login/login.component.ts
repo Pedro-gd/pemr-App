@@ -1,4 +1,3 @@
-import { AuthService } from './../services/auth.service';
 import { BaseForm } from './../../../shared/utils/base-form';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
@@ -24,8 +23,7 @@ export class LoginComponent implements OnInit {
     throw new Error('Method not implemented.');
   }
 
-
-  onLogin(){
+  onLogin() {
     this.router.navigate(['home']);
   }
 }
